@@ -1,4 +1,4 @@
-#ask the total bill amount< tip percentage, and people
+#ask the total bill amount, tip percentage, and people
 total_bill = float(input("What is the total amount of the bill? "))
 total_bill = round(total_bill, 2)
 tip_percentage = float(input("What is the percentage of tip? "))
