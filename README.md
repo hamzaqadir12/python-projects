@@ -12,3 +12,5 @@ Calculates simple interest based on a principal amount, interest rate, and time 
 
 ### Order Total Calculator
 Calculates the total cost of an order including tax, chaining two functions together — one for the subtotal, one for the final total.
+
+### Paint Calculator
