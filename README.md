@@ -14,3 +14,4 @@ Calculates simple interest based on a principal amount, interest rate, and time 
 Calculates the total cost of an order including tax, chaining two functions together — one for the subtotal, one for the final total.
 
 ### Paint Calculator
+Calculates the liters of paint required to cover a wall by chaining two custom functions — one to compute the area, another to determine paint needed based on coverage rate.
