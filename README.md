@@ -15,3 +15,6 @@ Calculates the total cost of an order including tax, chaining two functions toge
 
 ### Paint Calculator
 Calculates the liters of paint required to cover a wall by chaining two custom functions — one to compute the area, another to determine paint needed based on coverage rate.
+
+### Movie Ticket Price Calculator
+Determines ticket pricing based on age using conditionals, then calculates the total cost for multiple tickets by chaining two custom functions inside a main() entry point.
