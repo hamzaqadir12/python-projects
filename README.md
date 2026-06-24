@@ -18,3 +18,6 @@ Calculates the liters of paint required to cover a wall by chaining two custom f
 
 ### Movie Ticket Price Calculator
 Determines ticket pricing based on age using conditionals, then calculates the total cost for multiple tickets by chaining two custom functions inside a main() entry point.
+
+### Speed Fine Calculator
+Determines a driver's speeding fine by chaining two custom functions — one to calculate how much over the speed limit they were, another to assign the fine based on that value using conditionals.
