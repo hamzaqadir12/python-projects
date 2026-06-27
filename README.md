@@ -26,4 +26,4 @@ Determines a driver's speeding fine by chaining two custom functions — one to 
 Calculates Body Mass Index from weight and height using a custom formula, then categorizes the result into Underweight, Normal, Overweight, or Obese using conditionals chained across two helper functions.
 
 ### Shipping Cost Calculator
-Calculates shipping cost based on two variables — package weight and destination — using nested conditional logic to handle six different pricing outcomes across local and international shipping.
+Calculates shipping cost based on two variables — package weight and destination — using conditional logic with combined conditions to handle six different pricing outcomes across local and international shipping.
