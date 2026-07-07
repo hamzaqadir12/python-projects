@@ -27,3 +27,6 @@ Calculates Body Mass Index from weight and height using a custom formula, then c
 
 ### Shipping Cost Calculator
 Calculates shipping cost based on two variables — package weight and destination — using conditional logic with combined conditions to handle six different pricing outcomes across local and international shipping.
+
+### FizzBuzz
+Prints FizzBuzz, Fizz, Buzz, or the number itself for every integer up to a user-specified limit, using a while loop for input validation and a for loop to iterate through the range.
