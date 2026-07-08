@@ -1,16 +1,18 @@
 def main():
-    number = get_number()
-    printer(number)
+    printer()
 
-# ask user for a positive number, keep asking until valid input is given
-def get_number():
-    while True:
-        n = int(input("Number: "))
-        if n > 0:
-            return n
+def get_division(number):
+    if number % 3 == 0 and number % 5 == 0:
+        return "FizzBuzz"
+    elif number % 3 == 0:
+        return "Fizz"
+    elif number % 5 == 0:
+        return "Buzz"
+    else:
+        return str(number)
 
-def printer(number):
-    for _ in range(number):
-        print("#" * number)
+def printer():
+    for number in range(1, 101):
+        print(get_division(number))
 
 main()
