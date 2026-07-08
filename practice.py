@@ -1,18 +1,16 @@
 def main():
-    printer()
+    number = get_number()
+    printer(number)
 
-def get_division(number):
-    if number % 3 == 0 and number % 5 == 0:
-        return "FizzBuzz"
-    elif number % 3 == 0:
-        return "Fizz"
-    elif number % 5 == 0:
-        return "Buzz"
-    else:
-        return str(number)
+def get_number():
+    while True:
+        n = int(input("Number: "))
+        if n > 0:
+            return n
 
-def printer():
-    for number in range(1, 101):
-        print(get_division(number))
+def printer(number):
+    for row in range(1, number + 1):
+        for column in range(1, number + 1):
+            print(f"{row} x {column}= {row*column}")
 
 main()
