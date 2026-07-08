@@ -11,6 +11,6 @@ def get_number():
 def printer(number):
     for row in range(1, number + 1):
         for column in range(1, number + 1):
-            print(f"{row} x {column}= {row*column}")
-
+            print(row, end=" ")
+        print()
 main()
