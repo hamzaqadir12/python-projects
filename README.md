@@ -30,3 +30,6 @@ Calculates shipping cost based on two variables — package weight and destinati
 
 ### FizzBuzz
 Prints FizzBuzz, Fizz, Buzz, or the number itself for every integer up to a user-specified limit, using a while loop for input validation and a for loop to iterate through the range.
+
+### Grade Tracker
+Collects scores for a specified number of students, validates each input, categorizes scores into letter grades using a helper function, and displays the total count per grade — combining while loops, for loops, and multiple return values.
