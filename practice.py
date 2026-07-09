@@ -9,8 +9,12 @@ def get_number():
             return n
 
 def printer(number):
+    # top half
     for row in range(1, number + 1):
-        for column in range(1, number + 1):
-            print(row, end=" ")
-        print()
+        print(" " * (number - row) + "#" * (2 * row - 1))
+    
+    # bottom half
+    for row in range(1, number):
+        print(" " * row + "#" * (2 * (number - row) - 1))
+
 main()
