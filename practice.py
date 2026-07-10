@@ -5,10 +5,8 @@ def main():
 def get_number():
     while True:
         try:
-            x = int(input("X: "))
-            if 0 <= x <=100:
-                return x
+            return int(input("X: "))
         except ValueError:
-            print("Enter an integer")
+            pass
 
 main()
