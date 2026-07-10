@@ -1,17 +1,11 @@
 def main():
-    x = get_int("X: ")
-    while True:
-        y = get_int("Y: ")
-        try:
-            print(x / y)
-            break
-        except ZeroDivisionError:
-            pass
+    f = get_float("F: ")
+    print(f)
 
-def get_int(prompt):
+def get_float(prompt):
     while True:
         try:
-            return int(input(prompt))
+            return round(float(input(prompt)),2)
         except ValueError:
             pass
 
