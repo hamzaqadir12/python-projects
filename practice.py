@@ -1,11 +1,14 @@
 def main():
-    f = get_float("F: ")
-    print(f)
+    string = input("String: ")
+    count = get_count("Count: ")
+    print(string * count)
 
-def get_float(prompt):
+def get_count(prompt):
     while True:
         try:
-            return round(float(input(prompt)),2)
+            value = int(input(prompt))
+            if value > 0:
+                return value 
         except ValueError:
             pass
 
