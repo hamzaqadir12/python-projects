@@ -1,12 +1,16 @@
 def main():
-    c = get_celsius("Celsius: ")
-    print(round((c * 9/5)+ 32, 2))
+    a = get_age("Age: ")
+    print(f"Valid age: {a}")
 
-def get_celsius(prompt):
+def get_age(prompt):
     while True:
         try:
-            return float(input(prompt)) 
+            age = int(input(prompt))
+            if 0 <= age <= 120:
+                return age
+            else:
+                print("Invalid age")
         except ValueError:
-            pass
+            print("Invalid age")
 
 main()
