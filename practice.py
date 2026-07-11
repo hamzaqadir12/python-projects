@@ -1,14 +1,11 @@
 def main():
-    string = input("String: ")
-    count = get_count("Count: ")
-    print(string * count)
+    c = get_celsius("Celsius: ")
+    print(round((c * 9/5)+ 32, 2))
 
-def get_count(prompt):
+def get_celsius(prompt):
     while True:
         try:
-            value = int(input(prompt))
-            if value > 0:
-                return value 
+            return float(input(prompt)) 
         except ValueError:
             pass
 
