@@ -1,16 +1,36 @@
 def main():
-    a = get_age("Age: ")
-    print(f"Valid age: {a}")
+    x = get_num("X: ")
+    opp =get_opp()
+    while True:
+        y = get_num("Y: ")
+        try:
+            print(round(get_calc(x, y, opp), 2))
+            break
+        except ZeroDivisionError:
+            pass
 
-def get_age(prompt):
+def get_num(prompt):
     while True:
         try:
-            age = int(input(prompt))
-            if 0 <= age <= 120:
-                return age
-            else:
-                print("Invalid age")
+            return float(input(prompt))
         except ValueError:
-            print("Invalid age")
+            pass
+
+def get_opp():
+    while True:
+        operator = input("Operator: ")
+        if operator in ["+", "-", "*", "/"]:
+            return operator
+
+def get_calc(x, y, opp):
+    if opp == "+":
+        return x + y
+    elif opp == "-":
+        return x - y
+    elif opp == "*":
+        return x * y
+    else:
+        return x / y
+
 
 main()
