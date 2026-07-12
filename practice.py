@@ -1,13 +1,14 @@
 def main():
-    sent = get_sentence()
-    print(len(sent.split()))
+    w = get_word()
+    if w == w[::-1]:
+        print("Palindrome")
+    else:
+        print("Not a palindrome")
 
-def get_sentence():
+def get_word():
     while True:
-        sent = input("Sentence: ")
-        if len(sent.split()) == 0:
-            print("Invalid input")
-        else:
-            return sent
-
+        word = input("Word: ").lower()
+        if word.strip():
+            return word
+    
 main()
