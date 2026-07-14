@@ -1,16 +1,20 @@
+import random
 def main():
-    n = get_num("Number: ")
-    print(f"Your number is {n}")
+    eat = get_option()
+    f = random.choice(eat)
+    print(f"Tonight you eat at: {f}")
 
-def get_num(prompt):
+def get_option():
+    options = []
     while True:
-        try:
-            number = int(input(prompt))
-            if number > 0:
-                return number
-        except ValueError:
-            print("Not an integer")
-        else:
-            print("Too small")
+        place = input("Place (or done): ")
+        if place == "done":
+             if options:
+                 break
+             else:
+                 print("No options given")
+        elif place.strip():
+            options.append(place)
+    return options
 
 main()
