@@ -34,6 +34,11 @@ Prints FizzBuzz, Fizz, Buzz, or the number itself for every integer up to a user
 ### Grade Tracker
 Collects scores for a specified number of students, validates each input, categorizes scores into letter grades using a helper function, and displays the total count per grade — combining while loops, for loops, and multiple return values.
 
-Age Validator — Validates user age input using exception handling and range checking.
+### Age Validator
+Validates user age input using exception handling and range checking.
 
-Calculator — Performs basic arithmetic on two floats with full input validation and division by zero handling.
+### Calculator
+Performs basic arithmetic on two floats with full input validation and division by zero handling.
+
+### Restaurant Picker
+Collects restaurant options from the user and randomly selects one using the random module.
