@@ -1,13 +1,23 @@
 def main():
-    dollars = dollars_to_float(input("How much was the meal? "))
-    percent = percent_to_float(input("What percentage would you like to tip? "))
-    tip = dollars * percent
-    print(f"Leave ${tip:.2f}")
+    file = input("File Name: ").strip().lower()
+    type = file_type(file)
+    print(type)
 
-def dollars_to_float(d):
-    return float(d.replace("$", ""))
 
-def percent_to_float(p):
-    return float(p.replace("%", "")) / 100
+def file_type(file):
+    if file.endswith(".gif"):
+        return "image/gif"
+    elif file.endswith(".jpg") or file.endswith(".jpeg"):
+        return "image/jpeg"
+    elif file.endswith(".png"):
+        return "image/png"
+    elif file.endswith(".pdf"):
+        return "application/pdf"
+    elif file.endswith(".txt"):
+        return "text/plain"
+    elif file.endswith(".zip"):
+        return "application/zip"
+    else:
+        return "application/octet-stream"
 
 main()
