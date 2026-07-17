@@ -1,20 +1,13 @@
-import random
 def main():
-    eat = get_option()
-    f = random.choice(eat)
-    print(f"Tonight you eat at: {f}")
+    dollars = dollars_to_float(input("How much was the meal? "))
+    percent = percent_to_float(input("What percentage would you like to tip? "))
+    tip = dollars * percent
+    print(f"Leave ${tip:.2f}")
 
-def get_option():
-    options = []
-    while True:
-        place = input("Place (or done): ")
-        if place == "done":
-             if options:
-                 break
-             else:
-                 print("No options given")
-        elif place.strip():
-            options.append(place)
-    return options
+def dollars_to_float(d):
+    return float(d.replace("$", ""))
+
+def percent_to_float(p):
+    return float(p.replace("%", "")) / 100
 
 main()
