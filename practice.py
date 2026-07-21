@@ -1,23 +1,15 @@
 def main():
-    file = input("File Name: ").strip().lower()
-    type = file_type(file)
-    print(type)
+    change = get_calc()
+    print(f"Change Owed: {change}")
 
-
-def file_type(file):
-    if file.endswith(".gif"):
-        return "image/gif"
-    elif file.endswith(".jpg") or file.endswith(".jpeg"):
-        return "image/jpeg"
-    elif file.endswith(".png"):
-        return "image/png"
-    elif file.endswith(".pdf"):
-        return "application/pdf"
-    elif file.endswith(".txt"):
-        return "text/plain"
-    elif file.endswith(".zip"):
-        return "application/zip"
-    else:
-        return "application/octet-stream"
+def get_calc():
+    amount_due = 50
+    while True:
+        print(f"Amount Due: {amount_due}")
+        coin = int(input("Insert Coin: "))
+        if coin in [5, 10, 25]:
+            amount_due = amount_due - coin
+        if amount_due <= 0:
+            return abs(amount_due)
 
 main()
