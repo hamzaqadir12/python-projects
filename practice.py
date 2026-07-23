@@ -1,15 +1,26 @@
 def main():
-    change = get_calc()
-    print(f"Change Owed: {change}")
+    plate = input("Plate: ")
+    if is_valid(plate):
+        print("Valid")
+    else:
+        print("Invalid")
 
-def get_calc():
-    amount_due = 50
-    while True:
-        print(f"Amount Due: {amount_due}")
-        coin = int(input("Insert Coin: "))
-        if coin in [5, 10, 25]:
-            amount_due = amount_due - coin
-        if amount_due <= 0:
-            return abs(amount_due)
+def is_valid(plate):
+    if len(plate) < 2 or len(plate) > 6:
+        return False
+    if not plate[0].isalpha() or not plate[1].isalpha():
+        return False
+    for c in plate:
+        if not c.isalnum():
+            return False
+    digit = False
+    for c in plate:
+        if c.isdigit():
+            if not digit and c == "0":
+                return False
+            digit = True
+        if c.isalpha() and digit:
+            return False
+    return True
 
 main()
